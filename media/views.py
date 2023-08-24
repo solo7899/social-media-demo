@@ -53,7 +53,7 @@ def room_view(request, pk):
         return redirect("media:room", pk=room.id)
     context = {
         "room": room,
-        "messages": messages,
+        "room_messages": messages,
     }
     return render(request, "room.html", context)
 
